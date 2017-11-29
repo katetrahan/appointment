@@ -12,40 +12,15 @@ $(document).ready(function() {
     $("#return").show();
     event.preventDefault();
     var namePatient = $("input#nameEntry").val();
-
     $(".name").text(namePatient);
-
-    });
-
-    $("form#form2").submit(function(event) {
-      event.preventDefault();
-      var descriptionPatient = $("input#descriptionEntry").val();
-
-      $(".description").text(descriptionPatient);
-
-      });
-
-    $("form#form3").submit(function(event) {
-        event.preventDefault();
-        var datePatient = $("input#dateEntry").val();
-
-      $(".date").text(datePatient);
-
-    });
-
-    $("form#form4").submit(function(event) {
-        event.preventDefault();
-        var startPatient = $("input#startEntry").val();
-
-      $(".time").text(startPatient);
-
-    });
-
-    $("form#form5").submit(function(event) {
-        event.preventDefault();
-        var endPatient = $("input#endEntry").val();
-
-      $(".time2").text(endPatient);
+    var descriptionPatient = $("input#descriptionEntry").val();
+    $(".description").text(descriptionPatient);
+    var datePatient = $("input#dateEntry").val();
+    $(".date").text(datePatient);
+    var startPatient = $("input#startEntry").val();
+    $(".time").text(startPatient);
+    var endPatient = $("input#endEntry").val();
+    $(".time2").text(endPatient);
 
     });
 
